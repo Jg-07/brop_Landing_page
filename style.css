@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 10px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color:rgba(4, 58, 109);
+}
+
+html::-webkit-scrollbar-thumb {
+  background:#96c2ff;
+  border-radius: 25px;
+}
+
+.poster{
+    background: url("wall.png");
+    height: 581px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+
+.per{
+    animation: move 1s ease-in;
+    margin-right: 7%;
+}
+.per img{
+    width: 95%;
+}
+
+.cir{
+    background: white;
+    width: 28rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   border-radius: 28rem;
+}
+.cir1{
+    animation: enter 1s ease;
+    position: absolute;
+    border-radius: 100px;
+    top: 70px; 
+    z-index: 1;
+}
+.cir2{
+    color: #176DE4;
+    z-index: 2;
+    font-size: 40px;
+    font-weight: bold;
+    animation: enter 1s ease;
+    text-align: center;
+    padding-top:100px;
+    font-family: Montserrat;
+}
+.cir3{
+    text-align: center;
+    padding: 70px;
+    animation: enter 1s ease;
+    padding-bottom: 0px;
+    font-family: lato;
+    color: #979797;
+    font-size: 15px;
+    padding-top: 12.15px;
+}
+.toolbox{
+    background: rgba(4, 58, 109);
+    backdrop-filter: blur(4px);
+    width: 60%;
+    margin-left: 94.2%;
+    transition: all 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-85%); */
+    flex-direction: row;
+    position: fixed;
+    z-index: 6;
+    height: 100vh;
+}
+.credit{
+    position: absolute;
+    top:91%;
+    left: 41%;
+    font-size: small;
+    color: rgba(255, 255, 255,0.7);
+    font-family: lato;
+}
+.social{
+    color: white;
+    font-family: Montserrat;
+    position: absolute;
+    left: 70%;
+    top: 89.5%;
+    align-items: center;
+    grid-gap: 20px;
+    display: flex;
+}
+.key{
+    width: 53px;
+    position: absolute;
+    transition: all 0.8s ease;
+    top: 45vh;
+    left: 10px;
+}
+.toolkit{
+    text-align: center;
+}
+.toolkit .tool1,.tool2,.tool3,.tool4{
+    padding: 10px;
+    margin: 10px;
+    font-size: xx-large;
+    width: 250px;
+    font-weight: bold;
+    font-family: Montserrat;
+    transition: all 0.5s ease 0s;
+    color: white;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.toolkit .tool1:hover,.tool2:hover,.tool3:hover,.tool4:hover{
+    transform: skewX(-20deg);
+    background: rgba(4, 196, 255, 0.5);
+}
+
+.topbox{
+    background: #0358A6;
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+    display: none;
+    position: fixed;
+}
+.app{
+    padding: 40px;
+    animation: enter 1s ease;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.app .i1{
+    padding-right: 5px;
+}
+
+.app .i2{
+    padding-left: 5px;
+}
+
+.line1,.line2,.line3{
+    /* display: none; */
+    background: white;
+    margin: 2px;
+    height: 5px;
+    width: 45px;
+    border-radius: 10px;
+}
+
+@media (max-width:1100px){
+    .poster{
+        margin:0px;
+        padding-left: 10%;
+    }
+    .per img{
+        margin-top: 10vh;
+        margin-left: 20%;
+        width: 80%;    
+    }
+    .cir{
+        margin-top: 10vh;
+        border-radius: 40px;
+    }
+    .cir2{
+        font-size: 2rem;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .toolbox{
+        display: none;
+    }
+    .topbox{
+        display: block;
+    }
+}
+
+@media (max-width:800px){
+    .poster{
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    .cir{
+        border-radius: 40px;
+        transform: scale(0.8);
+    }
+    .app .i1{
+        transform: scale(1.2);
+        padding-right: 15px;
+    }
+    .per{
+        display: none;
+    }
+    .app .i2{
+        transform: scale(1.2);
+        padding-left: 15px;
+    }
+}
+
+.exp{
+    transform:translateX(-50vw)
+}
+.rot{
+    transform: rotateZ(180deg);
+}
+
+@keyframes move{
+    from{
+        padding-top: 100px;
+    }
+    to{
+        top:initial;
+    }
+}
+
+@keyframes enter{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: initial;
+    }
+}
