@@ -295,6 +295,7 @@ html::-webkit-scrollbar-thumb {
     } */
     .toolbox{
         transform: translateX(-2%);
+        z-index: 21;
     }
     /* .topbox{
         display: flex;
