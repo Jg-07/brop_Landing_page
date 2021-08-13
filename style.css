@@ -493,7 +493,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .exp2{
-    top: -20px;
+    top: -30px;
 }
 .rot2{
     transform: rotateZ(90deg);
