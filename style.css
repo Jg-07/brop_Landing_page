@@ -7,7 +7,7 @@
 }
 
 body{
-    overflow: visible;
+    overflow-x: hidden;
     background-color: #96c2ff;
 }
 
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 
 .per{
     animation: move 1s ease-in;
-    margin-right: 8%;
+    margin-right: 10vw;
 }
 .per img{
     width: 95%;
@@ -92,7 +92,7 @@ html::-webkit-scrollbar-thumb {
 .toolbox{
     background: #0358A6;
     backdrop-filter: blur(4px);
-    width: 60%;
+    width: 62%;
     margin-left: 94.2%;
     transition: all 0.6s ease;
     display: flex;
@@ -130,7 +130,6 @@ html::-webkit-scrollbar-thumb {
     width: 5%;
     left: 15px;
 }
-
 .key{
     width: 5%;
     position: absolute;
@@ -165,21 +164,19 @@ html::-webkit-scrollbar-thumb {
     margin:0px;
     width: 100%;
     height: 100vh;
-    top:-92%;
+    top:-90%;
     transition: all 0.6s ease;
-    z-index: 10;
+    z-index: 20;
     justify-content: center;
     align-items: flex-end;
     display: none;
     position: fixed;
 }
-.key2{
-    width: 5vh;
-    margin: 0px;
-    margin-bottom: 1vh;
-    transform: rotateZ(-90deg);
-    transition: all 1.1s ease;
-    z-index: 11;
+
+.key3{
+    width:40px;
+    padding-top:40px; 
+    padding-bottom: 20px;
 }
 
 .app{
@@ -219,7 +216,7 @@ html::-webkit-scrollbar-thumb {
     font-family: Montserrat;
     color:#ffffff;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3.8vw;
 }
 
 
@@ -228,7 +225,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     grid-gap:40px;
     /* justify-content: space-around;   */
-    margin-top: 150px;
+    margin-top: 30vh;
     margin-bottom: 100px;    
 }
 
@@ -261,35 +258,77 @@ html::-webkit-scrollbar-thumb {
         margin-left: 20%;
         width: 80%;    
     }
+    .poster{
+        padding-left: 0px;
+    }
     .cir{
+        width: 50%;
+        margin-left: 0%;
+    }
+    /* .cir{
         margin-top: 10vh;
         height: 25rem;
         border-radius: 40px;
     }
     .cir1{
-        top: 130px;
-        transform: scale(0.8);
+        top: 0px;
+        width: 100px;
     }
     .cir2{
         font-size: 1.7rem;
         color: rgba(255, 255, 255,2);
         color: #0358A6;
-        margin-top: 50px;
+        padding-top: 100px;
         padding-left:40px;
         padding-right: 40px;
     }
     .cir3{
-        /* color: rgba(216, 216, 216, 0.7); */
         font-size: 0.7rem;
     }
     .app{
        padding-top: 35px;
+       padding-left: 40%;
+       padding-right: 40%;
     }
+    .app .i1,.i2{
+        width: auto;
+    } */
     .toolbox{
+        transform: translateX(-2%);
+    }
+    /* .topbox{
+        display: flex;
+    } */
+    .key3{
         display: none;
     }
-    .topbox{
-        display: flex;
+    .service{
+        padding-left: 15%;
+        padding-right: 20%;
+    }
+
+    .service1{
+        grid-gap: 30px;
+        width: 100%;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    .head2{
+        text-align: center;
+        font-size: 5vw;
+        width: 100%;
+    }
+
+    .s1{
+        margin-top:60px;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .s1 img{
+        margin-top:20px;
+        transform: scale(1.1);
     }
 }
 @media (max-width:1000px) {
@@ -302,7 +341,25 @@ html::-webkit-scrollbar-thumb {
 }
 @media (max-width:800px){
     .topbox{
+        display: flex;
         margin-top:0px;
+        justify-content: space-between;
+    }
+    .key2{
+        width: 5vh;
+        margin-bottom: 2vh;
+        margin-right: 6vw;
+        transform: rotateZ(-90deg);
+        transition: all 1.1s ease;
+        z-index: 11;
+    }
+    .toolbox{
+        display: none;
+    }
+    .logo2{
+        margin-left: 6vw;
+        margin-bottom: 1vh;
+        width: 15vh;
     }
     .poster{
         padding-left: 0px;
@@ -310,35 +367,37 @@ html::-webkit-scrollbar-thumb {
         justify-content: center;
     }
     .cir{
-        border-radius: 40px;
-        height: 30rem;
-        width: 25rem;
-        transform: scale(0.8);
+        height: 100vh;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
     }
     .cir1{
+        position: relative;
+        width: 400px;
         top:30px;
     }
     .cir2{
-        padding-top: 150px;
+        font-size: 50px;
+        padding-top: 10px;
         padding-left: 15%;
         padding-right: 15%;
     }
     .cir3{
-        font-size: small;
-        padding-bottom: 60px;
+        font-size: larger;
+        padding-bottom: 20px;
     }
     .app .i1{
-        transform: scale(1.2);
-        padding-right: 15px;
+        transform: scale(1.7);
+        padding-right: 40px;
     }
     .per1{
         display: none;
     }
     .app .i2{
-        transform: scale(1.2);
-        padding-left: 15px;
+        transform: scale(1.7);
+        padding-left: 40px;
     }
-
     .service{
         padding-left: 10%;
         padding-right: 10%;
@@ -366,8 +425,68 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
+@media (max-width:600px){
+    .poster{
+        width: 100vw;
+    }
+    .logo2{
+        width: 15vh;
+        margin-bottom: 1vh;
+        margin-left: 20px;
+    }
+    .key2{
+        margin-bottom: 2vh;
+        margin-right: 30px;
+    }
+    .topbox{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        top:-90vh;
+    }
+    .cir{
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+    }
+    .cir1{
+        top:70px;
+        width: 200px;
+        height: 200px;
+    }
+    .cir2{
+        font-size: xx-large;
+        margin-top: 10px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .cir3{
+        font-size: medium;
+    }
+    .app{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .app .i1{
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    .app .i2{
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .service{
+        margin-top: 0vh;
+    }
+    .s1{
+        margin-top: 20px;
+        height: 60vh;
+    }
+}
+
 .exp{
-    transform:translateX(-50vw)
+    transform:translateX(-55.7vw)
 }
 .rot{
     transform: rotateZ(180deg);

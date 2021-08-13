@@ -3,6 +3,7 @@ let tool1 = document.querySelector(".toolbox");
 let tool2 = document.querySelector(".topbox");
 let body = document.querySelector(".body");
 let key2 = document.querySelector(".key2");
+let key3 = document.querySelector(".key3");
 let i = 0;
 
 key.addEventListener("click", function () {
@@ -30,3 +31,10 @@ key2.addEventListener("click", function () {
     }
     i++;
 })
+
+key3.addEventListener('click', function () {
+    window.scrollTo({
+        top: 690,
+        behavior: "smooth",
+    })
+});
