@@ -251,6 +251,39 @@ html::-webkit-scrollbar-thumb {
     width: 80%;
     border-radius: 20px;
 }
+.ahead{
+    font-family: Montserrat;
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 3.8vw;
+}
+.about{
+    background-color: #3a80e2;
+    display: flex;
+    margin-top: 0vh;
+    padding: 120px;
+    padding-left: 50px;
+    flex-direction: column;
+}
+
+.about1{
+    display: flex;
+    margin-top: 18vh;
+    font-family: Montserrat;
+    justify-content: space-between;
+}
+
+.content{
+    font-size: medium;
+    width: 50vw;
+    color: #ffffff;
+    font-weight:normal;
+}
+
+.banner{
+    margin-right: 5vw;
+    margin-top: -30px;
+}
 
 .pos{
     margin-top: -100px;
@@ -334,7 +367,10 @@ html::-webkit-scrollbar-thumb {
         font-size: 5vw;
         width: 100%;
     }
-
+    .ahead{
+        font-size: 10vw;
+        text-align: center;
+    }
     .s1{
         margin-top:60px;
         width: 100%;
@@ -348,6 +384,19 @@ html::-webkit-scrollbar-thumb {
     .logo{
         width: 30px;
         left: 1.3vw;
+    }
+    .banner{
+        margin-top: -10vh;
+    }
+    .about1{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .content{
+        margin-top: 6vh;
+        width: 80%;
+        text-align: center;
     }
 }
 @media (max-width:1000px) {
@@ -393,17 +442,20 @@ html::-webkit-scrollbar-thumb {
     }
     .cir1{
         position: relative;
-        width: 400px;
-        top:30px;
+        transform: scale(1);
+        width:30vh;
+        top:10vh;
     }
     .cir2{
         font-size: 50px;
-        padding-top: 10px;
+        padding-top: 1vh;
         padding-left: 15%;
         padding-right: 15%;
     }
     .cir3{
         font-size: larger;
+        padding-left: 25%;
+        padding-right: 25%;
         padding-bottom: 20px;
     }
     .app .i1{
@@ -441,6 +493,17 @@ html::-webkit-scrollbar-thumb {
     .s1 img{
         margin-top: -10px;
         transform: scale(0.8);
+    }
+    .about{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .banner{
+        margin-right: 1vw;
+    }
+    .content{
+        width: 90%;
+        font-size: larger;
     }
 }
 
@@ -483,26 +546,32 @@ html::-webkit-scrollbar-thumb {
     .cir2{
         font-size: xx-large;
         margin-top: 10px;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     .cir3{
-        font-size: medium;
+        font-size: 12px;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     .app{
-        flex-direction: column;
+        flex-direction: row;
         padding: 0px;
         margin: 0px;
     }
     .app .i1{
-        margin-bottom: 2vh;
+        /* margin-bottom: 2vh;
         transform: scale(1.4);
-        padding: 0px;
+        padding: 0px; */
+        transform: scale(1);
+        padding-right: 5px;
     }
     .app .i2{
-        padding: 0px;
+        /* padding: 0px;
         transform: scale(1.4);
-        margin-top: 2vh;
+        margin-top: 2vh; */
+        padding-left: 5px;
+        transform: scale(1);
     }
     .head2{
         text-align: center;
@@ -514,6 +583,70 @@ html::-webkit-scrollbar-thumb {
     .s1{
         margin-top: 20px;
         height: 60vh;
+    }
+    .content{
+        margin-top: 6vh;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-height:600px) {
+    .cir1{
+        top:12vh;
+        height: 120px;
+    }
+    .cir2{
+        padding-top: 30px;
+        font-size: 7vh;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .cir3{
+        font-size: 10px;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0px;
+    }
+    .app{
+        padding-top: 15px;
+        margin-bottom: 30px;
+    }
+   .app .i1{
+        transform: scale(1);
+        padding-right: 5px;
+    }
+    .app .i2{
+        transform: scale(1);
+        padding-left: 5px;
+    }
+}
+
+@media(max-height:400px){
+    .cir{
+        justify-content: center;
+    }
+    .cir1{
+        transform: scale(1);
+        width: 40vh;
+        top: -5vh;
+    }
+    .cir2{
+        font-size: 5vh;
+        padding-top: 30vh;
+    }
+    .cir3{
+        font-size: small;
+    }
+    .ahead{
+        font-size: 6vw;
+    }
+    .social{
+        left: 4%;
+        grid-gap: 5px;
+    }
+    .social img{
+        width: 20px;
     }
 }
 

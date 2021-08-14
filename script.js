@@ -39,7 +39,7 @@ key2.addEventListener("click", function () {
 
 key3.addEventListener('click', function () {
     window.scrollTo({
-        top: 690,
+        top: 650,
         behavior: "smooth",
     })
 });
