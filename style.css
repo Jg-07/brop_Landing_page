@@ -45,8 +45,8 @@ html::-webkit-scrollbar-thumb {
     display: none;
     transform: scale(1.4);
     margin-top: 40px;
-    margin-right: 15%;
-    margin-left: 10%;
+    margin-right: 18vw;
+    margin-left: 10vw;
 }
 .cir{
     background: white;
@@ -92,7 +92,7 @@ html::-webkit-scrollbar-thumb {
 .toolbox{
     background: #0358A6;
     backdrop-filter: blur(4px);
-    width: 62%;
+    width: 52vw;
     margin-left: 94.2%;
     transition: all 0.6s ease;
     display: flex;
@@ -101,7 +101,7 @@ html::-webkit-scrollbar-thumb {
     /* transform: translateX(-85%); */
     flex-direction: row;
     position: fixed;
-    z-index: 6;
+    z-index: 20;
     height: 100vh;
 }
 .credit{
@@ -124,18 +124,32 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
+.social img{
+    width: 30px;
+}
+
 .logo{
     position: absolute;
-    top: 15px;
-    width: 5%;
-    left: 15px;
+    top: 2vh;
+    width: 40px;
+    left: 0.7vw;
+}
+.blur{
+    display: none;
+    transition: all 0.8s ease;
+    position: fixed;
+    z-index: 19;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    background:#96e6ffa9;
 }
 .key{
-    width: 5%;
+    width: 40px;
     position: absolute;
     transition: all 0.8s ease;
     top: 45vh;
-    left: 18px;
+    left: 1.2vw;
 }
 .toolkit{
     text-align: center;
@@ -435,6 +449,13 @@ html::-webkit-scrollbar-thumb {
         margin-bottom: 1vh;
         margin-left: 20px;
     }
+    .logo3{
+        position: absolute;
+        width: 15vh;
+        left: 2vw;
+        top: 4vh;
+    }
+
     .key2{
         margin-bottom: 2vh;
         margin-right: 30px;
@@ -451,7 +472,7 @@ html::-webkit-scrollbar-thumb {
         margin-right: 0%;
     }
     .cir1{
-        top:70px;
+        top:10vh;
         width: 200px;
         height: 200px;
     }
@@ -470,12 +491,18 @@ html::-webkit-scrollbar-thumb {
         margin: 0px;
     }
     .app .i1{
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
+        transform: scale(1.4);
         padding: 0px;
     }
     .app .i2{
         padding: 0px;
-        margin-top: 20px;
+        transform: scale(1.4);
+        margin-top: 2vh;
+    }
+    .head2{
+        text-align: center;
+        font-size: 5.9vw;
     }
     .service{
         margin-top: 0vh;
@@ -487,17 +514,21 @@ html::-webkit-scrollbar-thumb {
 }
 
 .exp{
-    transform:translateX(-55.7vw)
+    transform:translateX(-44vw)
 }
 .rot{
     transform: rotateZ(180deg);
 }
 
 .exp2{
-    top: -60px;
+    top: -20vh;
 }
 .rot2{
     transform: rotateZ(90deg);
+}
+.display{
+    transition: all 0.8s ease;
+    display: block;
 }
 .endOverflow{
     overflow: hidden;
