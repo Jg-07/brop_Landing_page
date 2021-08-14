@@ -130,9 +130,9 @@ html::-webkit-scrollbar-thumb {
 
 .logo{
     position: absolute;
-    top: 2vh;
+    top: 3vh;
     width: 40px;
-    left: 0.7vw;
+    left: 1.2vw;
 }
 .blur{
     display: none;
@@ -345,6 +345,10 @@ html::-webkit-scrollbar-thumb {
         margin-top:20px;
         transform: scale(1.1);
     }
+    .logo{
+        width: 30px;
+        left: 1.3vw;
+    }
 }
 @media (max-width:1000px) {
     .per1{
@@ -521,7 +525,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .exp2{
-    top: -20vh;
+    top: -40vh;
 }
 .rot2{
     transform: rotateZ(90deg);
