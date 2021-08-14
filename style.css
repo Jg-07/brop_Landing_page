@@ -591,37 +591,6 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-height:600px) {
-    .cir1{
-        top:12vh;
-        height: 120px;
-    }
-    .cir2{
-        padding-top: 30px;
-        font-size: 7vh;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    .cir3{
-        font-size: 10px;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-bottom: 0px;
-    }
-    .app{
-        padding-top: 15px;
-        margin-bottom: 30px;
-    }
-   .app .i1{
-        transform: scale(1);
-        padding-right: 5px;
-    }
-    .app .i2{
-        transform: scale(1);
-        padding-left: 5px;
-    }
-}
-
 @media(max-height:400px){
     .cir{
         justify-content: center;
@@ -633,10 +602,13 @@ html::-webkit-scrollbar-thumb {
     }
     .cir2{
         font-size: 5vh;
-        padding-top: 30vh;
+        padding-top: 40vh;
     }
     .cir3{
-        font-size: small;
+        font-size: x-small;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1vh;
     }
     .ahead{
         font-size: 6vw;
@@ -648,7 +620,63 @@ html::-webkit-scrollbar-thumb {
     .social img{
         width: 20px;
     }
+    .app{
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .app .i1{
+        transform: none;
+        padding-right: 5px;
+    }
+    .app .i2{
+        transform: none;
+        padding-left: 5px;
+    }
 }
+
+@media(max-height:400px) and (max-width:750px){
+    .cir{
+        justify-content: center;
+    }
+    .cir1{
+        transform: scale(1);
+        width: 40vh;
+        top: 13vh;
+    }
+    .cir2{
+        font-size: 5vh;
+        padding-top: 10vh;
+    }
+    .cir3{
+        font-size: x-small;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1vh;
+    }
+    .ahead{
+        font-size: 6vw;
+    }
+    .social{
+        left: 4%;
+        grid-gap: 5px;
+    }
+    .social img{
+        width: 20px;
+    }
+    .app{
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .app .i1{
+        transform: none;
+        padding-right: 5px;
+    }
+    .app .i2{
+        transform: none;
+        padding-left: 5px;
+    }
+}
+
 
 .exp{
     transform:translateX(-44vw)
