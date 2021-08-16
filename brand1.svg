@@ -1,8 +1,8 @@
-<svg width="349" height="429" viewBox="0 0 349 429" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle r="164.313" transform="matrix(-1 0 0 1 164.313 205.059)" fill="#0358A6"/>
-<circle r="98.5877" transform="matrix(-1 0 0 1 164.317 205.067)" fill="#85B9FF"/>
-<path d="M349 0H14.4596V428.085H349V0Z" fill="url(#pattern0)"/>
-<rect x="293.791" y="157.748" width="32.8626" height="14.3111" fill="url(#pattern1)"/>
+<svg width="300" height="368" viewBox="0 0 300 368" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="158.757" cy="176.269" r="141.243" fill="#0358A6"/>
+<circle cx="158.753" cy="176.275" r="84.746" fill="#85B9FF"/>
+<path d="M0.000244141 0H287.571V367.982H0.000244141V0Z" fill="url(#pattern0)"/>
+<rect x="19.2092" y="135.6" width="28.2487" height="12.3018" fill="url(#pattern1)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(-0.0176131) scale(0.00230563 0.0018018)"/>

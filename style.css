@@ -71,7 +71,7 @@ html::-webkit-scrollbar-thumb {
 .cir2{
     color: #176DE4;
     z-index: 2;
-    font-size: 40px;
+    font-size: 6vh;
     font-weight: bold;
     padding-left: 10%;
     padding-right: 10%;
@@ -84,12 +84,11 @@ html::-webkit-scrollbar-thumb {
     text-align: center;
     padding: 70px;
     animation: enter 1s ease;
-    padding-bottom: 0px;
     font-family: lato;
     color: #979797;
-    font-size: 15px;
+    font-size: 2.5vh;
     padding-top: 8px;
-    padding-bottom:0px;
+    padding-bottom: 0px;
 }
 .toolbox{
     background: #0358A6;
@@ -163,7 +162,7 @@ html::-webkit-scrollbar-thumb {
     width: 250px;
     font-weight: bold;
     font-family: Montserrat;
-    transition: all 0.5s ease 0s;
+    transition: all 0.2s ease 0s;
     color: white;
     cursor: pointer;
     margin-left: 0px;
@@ -195,6 +194,10 @@ html::-webkit-scrollbar-thumb {
     padding-bottom: 20px;
 }
 
+.key2:active{
+    opacity: 0.4;
+}
+
 .app{
     padding-top: 30px;
     animation: enter 1s ease;
@@ -219,7 +222,7 @@ html::-webkit-scrollbar-thumb {
 
 .service{
     display: flex;
-    margin-bottom: 35vh;
+    margin-bottom: 28vh;
     padding: 120px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -299,7 +302,8 @@ html::-webkit-scrollbar-thumb {
 
 .about1{
     display: flex;
-    margin-top: 16vh;
+    margin-top: 0vh;
+    align-items: center;
     font-family: Montserrat;
     justify-content: space-between;
 }
@@ -336,9 +340,129 @@ html::-webkit-scrollbar-thumb {
 .con{
     margin-top: 30px;
     font-family: 'Nunito';
-    text-align: center;
+    text-align: justify;
     font-size: 3.1vh;
     color: #3884f0;
+}
+
+.enote{
+    background: #53B7E8;
+    height: 400px;
+    display: flex;
+    padding-right: 10%;
+    align-items: flex-end;
+}
+
+.enote1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.final{
+    background: #051a2e;
+    height: max-content;
+    position: relative;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left:20vw;
+    padding-right: 20vw;
+    z-index: 2;
+}
+
+.fcon{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fcon2{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(20%, 1fr) );
+    height: 100%;
+    width: 80%;
+    grid-gap: 30px;
+    padding-left: 10px;
+}
+
+.fcon a{
+    color: #96c2ff;
+    font-size: smaller;
+    width: 20%;
+    padding: 2px;
+    font-family: Montserrat;
+}
+
+.social2 img{
+    width: 25px;
+}
+
+.bimg{
+    width: 30vw;
+}
+
+.apps{
+    padding-top:40px;
+}
+
+.apps img{
+    padding: 4px;
+}
+
+.enw{
+    font-family: Montserrat;
+    font-size: 3vw;
+    width: 90%;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.enw1{
+    font-size: 2vw;
+    font-family: Montserrat;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #0358A6;
+}
+
+.contents{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 9vw;
+    align-items: center;
+    height: 54%;
+    font-weight: bold;
+    width: 100%;
+    align-items: baseline;
+    font-family: Montserrat;
+    color: white;
+}
+
+.tcon{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.tcon:active{
+    opacity: 0.4;
+}
+
+.tlogo{
+    width: 20%;
+}
+.tplane{
+    width: 20%;
 }
 
 @media (min-width:1100px){
@@ -427,7 +551,7 @@ html::-webkit-scrollbar-thumb {
         width: 90%;
     }
     .ahead{
-        font-size: 6vw;
+        font-size: 8vw;
         text-align: center;
     }
     .banner{
@@ -443,7 +567,7 @@ html::-webkit-scrollbar-thumb {
     .about1{
         justify-content: center;
         align-items: center;
-        margin-top: 25vh;
+        margin-top: 15vh;
         flex-direction: column-reverse;
     }
     .content{
@@ -459,6 +583,9 @@ html::-webkit-scrollbar-thumb {
         margin-top: 0px;
         padding: 20px;
     }
+    .details{
+        margin-top: 0vh;
+    }
 }
 @media (max-width:1000px) {
     .per1{
@@ -469,10 +596,17 @@ html::-webkit-scrollbar-thumb {
     }
 }
 @media (max-width:800px){
+    .contents{
+        font-size: 5vw;
+    }
     .topbox{
         display: flex;
         margin-top:0px;
+        /* align-items: center; */
         justify-content: space-between;
+    }
+    .details{
+        margin-top: 3vh;
     }
     .key2{
         width: 5vh;
@@ -540,13 +674,13 @@ html::-webkit-scrollbar-thumb {
     }
 
     .service1{
-        grid-gap: 30px;
+        grid-gap: 80px;
         width: 100%;
         margin-top: 80px;
         flex-direction: column;
     }
     .service2{
-        grid-gap: 30px;
+        grid-gap: 80px;
         width: 100%;
         margin-top: 80px;
         flex-direction: column;
@@ -554,8 +688,8 @@ html::-webkit-scrollbar-thumb {
     .s1{
         width: 80%;
         flex-direction: column;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .head2{
         font-size: 6.6vw;
@@ -573,16 +707,43 @@ html::-webkit-scrollbar-thumb {
         font-size: larger;
     }
     .con{
-        text-align: center;
+        text-align: justify;
         padding-left: 0px;
         padding-right: 0px;
     }
     .s1 h1{
         text-align: center;
     }
+    .enote{
+        padding: 30px;
+    }
+    .apps img{
+        width: 20vw;
+    }
+    .bimg{
+        display: none;
+    }
+    .enw{
+        font-size: 5.5vw;
+    }
+    .enw1{
+        font-size: 4.5vw;
+    }
+    .final{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+    }
+    .contents{
+        height: 48%;
+    }
 }
 
 @media (max-width:600px){
+    .contents{
+        height: 50%;
+        font-size: 8vw;
+    }
     .poster{
         width: 100vw;
     }
@@ -646,8 +807,12 @@ html::-webkit-scrollbar-thumb {
         text-align: center;
         font-size: 5.9vw;
     }
+    .about{
+        margin-bottom: 20vh;
+    }
     .service{
-        margin-top: 30vh;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
     }
     .content{
         margin-top: 6vh;
@@ -656,6 +821,43 @@ html::-webkit-scrollbar-thumb {
     }
     .con{
         font-size: 4vw;
+    }
+    .enote{
+        flex-direction: column;
+        align-items: center;
+    }
+    .enote1{
+        width: 100%;
+    }
+    .enw{
+        font-size: 5.5vw;
+        width: 90%;
+    }
+    .apps{
+        padding-top: 20px;
+    }
+    .apps img{
+        width: 30vw;
+    }
+    .brand{
+        padding-top: 20px;
+        width: 30vh;
+        padding-right: 10px;
+    }
+    .final{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .social2{
+        width: 30%;
+        margin-top: 30px;
+        padding-left: 12px;
+    }
+    .social2 img{
+        width: 20px;
     }
 }
 
@@ -845,6 +1047,14 @@ html::-webkit-scrollbar-thumb {
         padding-bottom: 10vh;
     }
 }
+
+@media(max-width:600px) and (max-height:750px){
+    .contents{
+        height: 58%;
+    }
+}
+
+
 
 @media (min-height:1300px) {
     .topbox{
