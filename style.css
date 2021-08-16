@@ -1058,7 +1058,7 @@ html::-webkit-scrollbar-thumb {
 
 
 
-@media (min-height:1300px) {
+@media (min-height:1300px) or (min-width:1300px) {
     .topbox{
         display: flex;
         margin-top:0px;
