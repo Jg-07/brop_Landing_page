@@ -121,7 +121,7 @@ html::-webkit-scrollbar-thumb {
     left: 3.2%;
     bottom: 15px;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -219,7 +219,7 @@ html::-webkit-scrollbar-thumb {
 
 .service{
     display: flex;
-    margin-top: 35vh;
+    margin-bottom: 35vh;
     padding: 120px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -252,15 +252,34 @@ html::-webkit-scrollbar-thumb {
 
 .s1{
     background: #DBEEFF;
-    height: 420px;
+    height: fit-content;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 10vh;
+    padding: 3%;
+    padding-top: 1%;
     width: 70vw;
     border-radius: 20px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: small;
+    margin-top: 3vh;
+    color: #176DE4;
+}
+
+.name{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #002C55;
+}
+.role{
+    font-family: Montserrat;
+}
+.place{
+    font-family: Montserrat;
 }
 .ahead{
     font-family: Montserrat;
@@ -274,12 +293,13 @@ html::-webkit-scrollbar-thumb {
     margin-top: 0vh;
     padding: 120px;
     padding-left: 50px;
+    margin-bottom: 30vh;
     flex-direction: column;
 }
 
 .about1{
     display: flex;
-    margin-top: 22vh;
+    margin-top: 16vh;
     font-family: Montserrat;
     justify-content: space-between;
 }
@@ -308,6 +328,7 @@ html::-webkit-scrollbar-thumb {
 
 .s1 h1{
     margin-top: 20px;
+    text-align: center;
     font-family: Montserrat;
     color: #0358A6;
 }
@@ -325,7 +346,7 @@ html::-webkit-scrollbar-thumb {
         overflow: visible;
     }
 }
-@media (max-width:1100px){
+@media (max-width:1100px) {
     .poster{
         margin:0px;
         padding-left: 10%;
@@ -342,6 +363,16 @@ html::-webkit-scrollbar-thumb {
         width: 50%;
         margin-left: 0%;
     }
+    .cir1{
+        top: 30px;
+        transform: scale(1);
+        width: 40vh;
+        height: 40vh;
+    }
+    .cir2{
+        font-size: xx-large;
+        padding-top: 40vh;
+    }
     
     .toolbox{
         transform: translateX(-2%);
@@ -352,12 +383,23 @@ html::-webkit-scrollbar-thumb {
         display: none;
     }
     .service{
+        align-items: center;
         padding-left: 5%;
-        padding-right: 5%;
+        padding-right: 12%;
     }
 
     .s1{
         height: max-content;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 0px;
+    }
+
+    .con{
+        margin-top: 10px;
+        text-align: left;
+        width: 100%;
     }
 
     .s1 h1{
@@ -381,8 +423,8 @@ html::-webkit-scrollbar-thumb {
 
     .head2{
         text-align: center;
-        font-size: 5vw;
-        width: 100%;
+        font-size: 4vw;
+        width: 90%;
     }
     .ahead{
         font-size: 6vw;
@@ -409,6 +451,14 @@ html::-webkit-scrollbar-thumb {
         width: 80%;
         text-align: center;
     }
+    .pos1{
+        margin-top: 0px;
+        padding: 20px;
+    }
+    .pos{
+        margin-top: 0px;
+        padding: 20px;
+    }
 }
 @media (max-width:1000px) {
     .per1{
@@ -434,6 +484,7 @@ html::-webkit-scrollbar-thumb {
     }
     .pos1{
         margin-top: 20px;
+        padding: 0px;
     }
     .toolbox{
         display: none;
@@ -502,6 +553,7 @@ html::-webkit-scrollbar-thumb {
     }
     .s1{
         width: 80%;
+        flex-direction: column;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -520,9 +572,94 @@ html::-webkit-scrollbar-thumb {
         width: 90%;
         font-size: larger;
     }
+    .con{
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .s1 h1{
+        text-align: center;
+    }
 }
 
 @media (max-width:600px){
+    .poster{
+        width: 100vw;
+    }
+    .logo2{
+        width: 15vh;
+        margin-bottom: 1vh;
+        margin-left: 20px;
+    }
+    .logo3{
+        position: absolute;
+        width: 15vh;
+        left: 2vw;
+        top: 4vh;
+    }
+
+    .key2{
+        margin-bottom: 2vh;
+        margin-right: 30px;
+    }
+    .topbox{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        top:-90vh;
+    }
+    .cir{
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+    }
+    .cir1{
+        top:10vh;
+        width: 200px;
+        height: 200px;
+    }
+    .cir2{
+        font-size: xx-large;
+        margin-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .cir3{
+        font-size: 12px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .app{
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+    }
+    .app .i1{
+        transform: scale(1);
+        padding-right: 5px;
+    }
+    .app .i2{
+        padding-left: 5px;
+        transform: scale(1);
+    }
+    .head2{
+        text-align: center;
+        font-size: 5.9vw;
+    }
+    .service{
+        margin-top: 30vh;
+    }
+    .content{
+        margin-top: 6vh;
+        width: 100%;
+        text-align: center;
+    }
+    .con{
+        font-size: 4vw;
+    }
+}
+
+@media(max-width:800px) and (max-height:600px){
     .poster{
         width: 100vw;
     }
@@ -595,12 +732,9 @@ html::-webkit-scrollbar-thumb {
         text-align: center;
     }
     .con{
-        padding-left: 10px;
-        padding-right: 10px;
         font-size: 4vw;
     }
 }
-
 @media(max-height:400px){
     .cir{
         justify-content: center;
@@ -647,18 +781,18 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
-@media(max-height:400px) and (max-width:750px){
+@media(max-height:500px) and (max-width:900px){
     .cir{
         justify-content: center;
     }
     .cir1{
         transform: scale(1);
         width: 40vh;
-        top: 13vh;
+        top: 5vh;
     }
     .cir2{
         font-size: 5vh;
-        padding-top: 10vh;
+        padding-top: 33vh;
     }
     .cir3{
         font-size: x-small;
@@ -690,6 +824,157 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
+@media(max-height:500px) and (max-width:750px){
+    .cir{
+        justify-content: center;
+    }
+    .cir1{
+        transform: scale(1);
+        width: 32vh;
+        height: 32vh;
+        top: 12vh;
+    }
+    .cir2{
+        font-size: 5vh;
+        padding-top: 10vh;
+    }
+    .cir3{
+        font-size: x-small;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10vh;
+    }
+}
+
+@media (min-height:1300px) {
+    .topbox{
+        display: flex;
+        margin-top:0px;
+        justify-content: space-between;
+    }
+    .per{
+        display: none;
+    }
+    .key2{
+        width: 5vh;
+        margin-bottom: 2vh;
+        margin-right: 6vw;
+        transform: rotateZ(-90deg);
+        transition: all 1.1s ease;
+        z-index: 11;
+    }
+    .pos1{
+        margin-top: 20px;
+        padding: 0px;
+    }
+    .toolbox{
+        display: none;
+    }
+    .logo2{
+        margin-left: 6vw;
+        margin-bottom: 1vh;
+        width: 15vh;
+    }
+    .poster{
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    .cir{
+        height: 100vh;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+    .cir1{
+        position: relative;
+        transform: scale(1);
+        width:30vh;
+        height: 30vh;
+        top:10vh;
+    }
+    .cir2{
+        font-size: 80px;
+        padding-top: 1vh;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .cir3{
+        font-size: xx-large;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-bottom: 20px;
+    }
+    .app .i1{
+        transform: scale(2.1);
+        padding-right: 50px;
+    }
+    .per1{
+        display: none;
+    }
+    .app .i2{
+        transform: scale(2.1);
+        padding-left: 50px;
+    }
+    .service{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .service1{
+        grid-gap: 30px;
+        width: 100%;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .service2{
+        grid-gap: 30px;
+        width: 100%;
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .s1{
+        width: 80%;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .head2{
+        font-size: 6.6vw;
+        width: 100%;
+    }
+    .about1{
+        margin-top: 20vh;
+    }
+    .about{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .ahead{
+        font-size: 8vw;
+    }
+    .banner{
+        margin-right: 1vw;
+    }
+    .content{
+        width: 90%;
+        font-size: larger;
+    }
+    .con{
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .s1 h1{
+        text-align: center;
+    }
+    .s1{
+        padding-bottom: 6%;
+    }
+    .details{
+        font-size: 25px;
+    }
+}
 
 .exp{
     transform:translateX(-44vw)
