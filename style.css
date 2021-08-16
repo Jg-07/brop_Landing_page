@@ -1058,7 +1058,7 @@ html::-webkit-scrollbar-thumb {
 
 
 
-@media (min-height:1300px) or (min-width:1300px) {
+@media (min-height:1300px){
     .topbox{
         display: flex;
         margin-top:0px;
@@ -1186,8 +1186,11 @@ html::-webkit-scrollbar-thumb {
     .details{
         font-size: 25px;
     }
+}
+
+@media (min-width:1300px){
     .bimg{
-        width:19vw;
+        width:40vh;
     }
 }
 
