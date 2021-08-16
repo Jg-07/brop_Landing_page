@@ -394,7 +394,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .fcon a{
-    color: #96c2ff;
+    color: white;
+    opacity: 0.5;
     font-size: smaller;
     width: 20%;
     padding: 2px;
@@ -403,6 +404,7 @@ html::-webkit-scrollbar-thumb {
 
 .social2 img{
     width: 25px;
+    opacity: 0.5;
 }
 
 .bimg{
