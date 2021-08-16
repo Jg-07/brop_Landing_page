@@ -1186,6 +1186,9 @@ html::-webkit-scrollbar-thumb {
     .details{
         font-size: 25px;
     }
+    .bimg{
+        width:19vw;
+    }
 }
 
 .exp{
