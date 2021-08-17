@@ -10,7 +10,7 @@
 
 body{
     overflow-x: hidden;
-    background-color: #96c2ff;
+    background-color: #81d6fd;
 }
 
 html::-webkit-scrollbar {
@@ -820,6 +820,7 @@ html::-webkit-scrollbar-thumb {
         margin-top: 6vh;
         width: 100%;
         text-align: center;
+        font-size: small;
     }
     .con{
         font-size: 4vw;
