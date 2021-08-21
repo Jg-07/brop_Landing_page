@@ -443,7 +443,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     font-weight: bold;
     width: 100%;
-    margin-top: 45vh;
+    margin-top: 40vh;
     align-items: baseline;
     font-family: Montserrat;
     color: white;
@@ -752,7 +752,7 @@ html::-webkit-scrollbar-thumb {
         padding-bottom: 5%;
     }
     .tcon{
-        font-size: 8vw;
+        font-size: 7vw;
     }
     .poster{
         width: 100vw;
