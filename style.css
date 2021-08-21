@@ -1071,8 +1071,17 @@ html::-webkit-scrollbar-thumb {
 @media (min-height:1300px){
     .topbox{
         display: flex;
+        flex-direction: column;
         margin-top:0px;
         justify-content: space-between;
+    }
+    .logos2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tplane{
+        display: flex;
+        justify-content: center;
     }
     .per{
         display: none;
