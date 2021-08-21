@@ -182,8 +182,6 @@ html::-webkit-scrollbar-thumb {
     top:-90%;
     transition: all 0.6s ease;
     z-index: 20;
-    justify-content: center;
-    align-items: flex-end;
     display: none;
     position: fixed;
 }
@@ -443,10 +441,9 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
     font-size: 9vw;
     align-items: center;
-    height: 54%;
-    padding-bottom: 15vh;
     font-weight: bold;
     width: 100%;
+    margin-top: 45vh;
     align-items: baseline;
     font-family: Montserrat;
     color: white;
@@ -602,7 +599,6 @@ html::-webkit-scrollbar-thumb {
 @media (max-width:800px){
     .contents{
         font-size: 5vw;
-        height: 48%;
     }
     .tplane{
         display: flex;
@@ -610,8 +606,13 @@ html::-webkit-scrollbar-thumb {
     }
     .topbox{
         display: flex;
+        flex-direction: column;
         margin-top:0px;
         /* align-items: center; */
+        justify-content: space-between;
+    }
+    .logos2{
+        display: flex;
         justify-content: space-between;
     }
     .details{
@@ -747,7 +748,6 @@ html::-webkit-scrollbar-thumb {
 
 @media (max-width:600px){
     .contents{
-        height: 50%;
         font-size: 8vw;
         padding-bottom: 5%;
     }
@@ -1067,14 +1067,6 @@ html::-webkit-scrollbar-thumb {
         font-size: large;
     }
 }
-
-@media(max-width:600px) and (max-height:750px){
-    .contents{
-        height: 58%;
-    }
-}
-
-
 
 @media (min-height:1300px){
     .topbox{
